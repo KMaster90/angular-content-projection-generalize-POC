@@ -1,0 +1,16 @@
+<h2>Simple Button Without Content Projection</h2>
+<app-btn></app-btn>
+<app-btn></app-btn>
+
+
+<h2>Button Demo With ng-content</h2>
+<app-fancybtn>Click Me</app-fancybtn>
+<app-fancybtn><b>Submit</b></app-fancybtn>
+
+
+<h2>Button with click event</h2>
+<app-fancybtn (click)="btnClicked($event)"><b>Submit</b></app-fancybtn>
+
+
+<h2>Button with user defined event event</h2>
+<app-fancybtn (someEvent)="DoSomething($event)"><b>Submit</b></app-fancybtn>
